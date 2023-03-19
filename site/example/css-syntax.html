@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy of a CSS rule</title>
+    <style>
+        h1 {
+            color:brown;
+            font-size: 36px;
+        }
+        
+        h1, h2{
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: left;
+        }
+        .normalText {
+            color: brown;
+            font-style: italic;
+        }
+        #conclude {
+            color: rebeccapurple;
+            opacity: .6;
+        }
+
+        div:nth-child(odd) {
+            background: gray;
+        }
+        a:hover div:nth-child(5) {
+            font-size: larger;
+            background: yellowgreen;
+            color:rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anatomy of a CSS rule</h1>
+    <h2>Subheading 1</h2>
+    <p class="normalText">
+        CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed. And while styling an entire web page could be a pretty complex process, defining a simple CSS rule is fairly straightforward. So, let's go over that. A CSS rule consists of selector, in this case it's a p, the paragraph tag, which is basically saying that whatever rules I'm about to give should apply to the content of every single paragraph tag in the entire HTML page. The selector is followed by open and close curly braces. Inside of those braces, we have CSS declaration. And it consist of two parts, the property and the value. Property name is something that's predefined by CSS specification, and for every property there is a set number of pre-defined values. Or in the case of numerical values, set number of type of numerical values that is pre-defined. Now, every property in the value is separated by a colon, and is terminated by a semicolon. Now, technically speaking, a semicolon is not a requirement, but it's a best practice, and you should always, always use it.
+    </p>
+    <h2>Subheading 2</h2>
+    <p id="conclude">
+        Now, the collection of these CSS rules is what's called a style sheet. Now, technically speaking, you don't have to have anything in the style sheet to be called a style sheet. An empty style sheet, it technically is a style sheet as well. But it's just not a very useful one. So, obviously, you would have at least one CSS rule in there. But, typically, you have way more than just one. Okay, here I am in sublime text and I'm looking at a file called css-syntax.html and it's located in the examples/Lecture12 folder. Let me give you a quick rundown of the structure of the HTML that we have. So, in this HTML document we have a heading, h1, a couple of h2s, and a couple of paragraphs in between signified by the p paragraph tag. And what we'll want to do is give these elements some custom styling. So, I'm going to place the styling, our style sheet, straight in the head section of our HTML document. Now, in later lecture we'll talk about where CSS styles should really go for a real world website. But for now, for convenience sake, we'll just put it straight in the head part of the document. So, here we see a paragraph tag that's being targeted. And we're going to change it's color to blue, font size to 20, and width 200, which means it will contain an area of the screen that's 200 pixels wide. Our heading one tag, h1, we're going to give it a color of green, we'll bump up it's font size a little bit and we'll also tell it to align itself in the middle of the screen. So, let's take a look at what this page looks like in the browser.
+    </p>
+    <a>
+        <div>DIV1</div>
+        <div>DIV2</div>
+        <div>DIV3</div>
+        <div>DIV4</div>
+        <div>DIV5</div>
+        <div>DIV6</div>
+    </a>
+</body>
+</html>
