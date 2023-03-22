@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two column layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #p2 {
+            font-style: italic;
+        }
+        #p3 {
+            font-weight: bold;
+        }
+        p {
+            width: 33.3%;
+            float: left;
+            padding: 10px;
+        }
+        section {
+            color: red;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1">
+            In this lecture we're going to talk about positioning elements by floating them. Now knowing how to properly float elements is an essential skill to have, and this is partially because most of the UIs today, web UIs today that are made, are made by floating the elements. In fact, by the end of this lecture, we're going to create a two column flexible design where the columns will be flexible as we expand and contract the browser. So let's jump into the code editor and see how this works. Okay, so we are in sublime text and we're looking at the file named floating before that HTML. So let's go over the structure of this HTML document real quick. We have our regular h1 here just to announce what that is, and then we have a div with four paragraph tags and a section tag with some text in it, and the paragraph tags ID p1, p2, p3, p4. If you look at our div section, we styled the div tag, its background to be a certain color.
+        </p>
+        <p id="p2">
+            Basically a light bluish color, and every single paragraph tag was styled to be 50 pixels wide and 50 pixels tall, and we gave it a nice one pixel border. And just to differentiate between each paragraph box, we gave it a different background color to each one. So let's go ahead and take a look at what this looks like in the browser.
+        </p>
+        <p id="p3">
+            Also, floats don't have vertical margin collapse, so previously hidden or collapsed margins will show up once you float the element. And remember that to resume normal document flow, use the clear property. Either clear left, clear right or clear both. Next, we're going to talk about relative and absolute element positioning.
+        </p>
+        <section>This regular content continuing after the paragraph boxes.</section>
+    </div>
+</body>
+</html>

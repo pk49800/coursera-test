@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Box model</title>
+    <style>
+        /* reset the broswer default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: gray;
+        }
+        #box {
+            background-color: blue;
+            padding: 10px 30px;
+            border: 20px solid black;
+            width: 300px;
+            margin-top:20px;
+        }
+        #content {
+            background-color: greenyellow;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box model</h1>
+    <div id="box">
+        <div id="content">so in the previous segment we spoke about the fact that you should always try to use box sizing border box as your box sizing model. Now, of course, you don't want to specify box sizing border box on every element in your entire HTML, so you definitely want to specify it once and then have it be inherited everywhere. So let's go ahead and try to do that. Let's remove this border box from here. And body seems to be like a natural place to put it since body is the top level element and it should inherit everywhere else. So if I place the box size and border box here and then I refresh, this should stay the same. It didn't work. Now, why it didn't that work? It jumped back to the content box. Well, the reason that didn't work is because box sizing is one of those CSS properties that is not inherited. You can't set it on the parent element and then expect that the child elements will inherit that property. So how do we get around that? Well, the way we get around it is by learning about one more selector. And that selector is the star selector.</div>
+    </div>
+</body>
+</html>

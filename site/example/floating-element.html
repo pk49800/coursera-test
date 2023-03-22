@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating elements</title>
+    <style>
+        /* * {
+            margin: 0;
+        } */
+        div {
+            background-color:aqua;
+        }
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin-right: 10px;
+        }
+        #p1 {
+            background-color:tomato;
+            float: left;
+            height: 150px;
+        }
+        #p2 {
+            background-color: yellow;
+            float: right;
+            height: 100px;
+        }
+        #p3 {
+            background-color: blue;
+            clear: both;
+        }
+        #p4 {
+            background-color: brown;
+        }
+        section {
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Floating elements</h1>
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <section>CSS works by associating rules with HTML elements. </section>
+    </div>
+</body>
+</html>
