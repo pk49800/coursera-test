@@ -1,0 +1,75 @@
+body {
+    font-size: 16px;
+    color: #000;
+    font-family: sans-serif;
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
+/* Header */
+.navbar-header .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#nav-list {
+    margin:0;
+    background-color:cornflowerblue;
+}
+#nav-list a {
+    text-align: center;
+}
+#collapsable-nav {
+    padding: 0;
+}
+#collapsable-nav li {
+    border-bottom: 1px solid #ccc;
+}
+#collapsable-nav li:nth-child(3) {
+    border-bottom: none;
+}
+#collapsable-nav li a {
+    font-size: 1.2em;
+    color: #fff;
+}
+#page-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* End Header */
+/* Main Menu */
+#main-menu section div {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+#menu1 {
+    background-color: burlywood;
+}
+#menu2 {
+    background-color:darksalmon;
+}
+#menu3 {
+    background-color: darkgrey;
+}
+.menu-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px auto;
+}
+@media (max-width: 767px) {
+    .container > .row {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+/* End Main Menu */
+/* For index-no-grade */
+.row section {
+    border: 2px solid #fff;
+   padding-bottom: 25px;
+   margin-bottom: 15px;
+}
+section p {
+    height: 700px;
+    overflow: scroll;
+}
